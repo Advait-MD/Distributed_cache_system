@@ -1,0 +1,70 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "args": {
+    "runs": 5,
+    "ops": 1000000,
+    "capacity": 100000
+  },
+  "runs": [
+    {
+      "get_hit": 873036.1792137732,
+      "get_miss": 3059663.4775885087,
+      "put_update": 943915.0163558559,
+      "put_insert_evict": 697593.2471410993,
+      "dict_get_reference": 15005162.97648278,
+      "dict_set_reference": 7539794.469724488
+    },
+    {
+      "get_hit": 857086.4515488365,
+      "get_miss": 2949139.0245189406,
+      "put_update": 1042151.1518814261,
+      "put_insert_evict": 729081.8715590317,
+      "dict_get_reference": 15505551.530143494,
+      "dict_set_reference": 7957665.600972298
+    },
+    {
+      "get_hit": 936978.8784075537,
+      "get_miss": 3121339.92655617,
+      "put_update": 1235636.9010584997,
+      "put_insert_evict": 737811.7238393618,
+      "dict_get_reference": 14845967.593217133,
+      "dict_set_reference": 7853379.046698547
+    },
+    {
+      "get_hit": 923514.6522567588,
+      "get_miss": 3035098.835960418,
+      "put_update": 1091047.4039803592,
+      "put_insert_evict": 736410.2589389762,
+      "dict_get_reference": 15286445.595832841,
+      "dict_set_reference": 7897857.638980776
+    },
+    {
+      "get_hit": 1007759.8892099936,
+      "get_miss": 3048403.9262744416,
+      "put_update": 1188660.7658693898,
+      "put_insert_evict": 749425.8356397145,
+      "dict_get_reference": 15713068.310638724,
+      "dict_set_reference": 8322942.278613095
+    }
+  ],
+  "median_ops_per_sec": {
+    "get_hit": 923514.6522567588,
+    "get_miss": 3048403.9262744416,
+    "put_update": 1091047.4039803592,
+    "put_insert_evict": 736410.2589389762,
+    "dict_get_reference": 15286445.595832841,
+    "dict_set_reference": 7897857.638980776
+  }
+}
