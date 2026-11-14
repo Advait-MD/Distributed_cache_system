@@ -1,5 +1,7 @@
 import requests
 
+from services import bench_counters
+
 
 class DistributedCache:
     """
@@ -48,6 +50,9 @@ class DistributedCache:
                     continue
 
             except requests.RequestException:
+
+                # No-op unless DCS_BENCH_INSTRUMENT=1 (bench/ only).
+                bench_counters.record_node_error(node)
 
                 continue
 

@@ -26,6 +26,11 @@ from . import routes_manage  # noqa: F401
 from . import routes_node  # noqa: F401
 from . import routes_datasets  # noqa: F401
 
+# Benchmark-only counters endpoint, opt-in (DCS_BENCH_INSTRUMENT=1).
+from services import bench_counters as _bench_counters
+if _bench_counters.ENABLED:
+    from . import routes_bench  # noqa: F401
+
 # Static last: its mount is registered after every API route.
 from . import routes_static  # noqa: F401
 

@@ -1,0 +1,213 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "args": {
+    "keys": 100000,
+    "runs": 3
+  },
+  "runs": [
+    {
+      "remap": {
+        "3": {
+          "consistent_pct": 27.738,
+          "mod_n_pct": 74.925,
+          "ideal_ch_pct": 25.0,
+          "expected_mod_pct": 75.0
+        },
+        "5": {
+          "consistent_pct": 14.178,
+          "mod_n_pct": 83.521,
+          "ideal_ch_pct": 16.666666666666668,
+          "expected_mod_pct": 83.33333333333333
+        },
+        "10": {
+          "consistent_pct": 8.572,
+          "mod_n_pct": 90.839,
+          "ideal_ch_pct": 9.090909090909092,
+          "expected_mod_pct": 90.9090909090909
+        }
+      },
+      "balance": {
+        "1": {
+          "stdev_keys": 17666.150288050874,
+          "cv_pct": 88.33075144025436,
+          "max_over_mean": 2.4131,
+          "min_over_mean": 0.10305
+        },
+        "10": {
+          "stdev_keys": 5288.8606334445985,
+          "cv_pct": 26.444303167222994,
+          "max_over_mean": 1.4886,
+          "min_over_mean": 0.7699
+        },
+        "100": {
+          "stdev_keys": 1976.5021629130588,
+          "cv_pct": 9.882510814565293,
+          "max_over_mean": 1.14445,
+          "min_over_mean": 0.85655
+        },
+        "200": {
+          "stdev_keys": 833.8371543652873,
+          "cv_pct": 4.169185771826436,
+          "max_over_mean": 1.0474,
+          "min_over_mean": 0.94815
+        }
+      }
+    },
+    {
+      "remap": {
+        "3": {
+          "consistent_pct": 26.306,
+          "mod_n_pct": 74.802,
+          "ideal_ch_pct": 25.0,
+          "expected_mod_pct": 75.0
+        },
+        "5": {
+          "consistent_pct": 16.184,
+          "mod_n_pct": 83.4,
+          "ideal_ch_pct": 16.666666666666668,
+          "expected_mod_pct": 83.33333333333333
+        },
+        "10": {
+          "consistent_pct": 8.761,
+          "mod_n_pct": 90.874,
+          "ideal_ch_pct": 9.090909090909092,
+          "expected_mod_pct": 90.9090909090909
+        }
+      },
+      "balance": {
+        "1": {
+          "stdev_keys": 14086.571775985809,
+          "cv_pct": 70.43285887992904,
+          "max_over_mean": 1.9094,
+          "min_over_mean": 0.00445
+        },
+        "10": {
+          "stdev_keys": 4715.782649783597,
+          "cv_pct": 23.578913248917985,
+          "max_over_mean": 1.3244,
+          "min_over_mean": 0.60985
+        },
+        "100": {
+          "stdev_keys": 883.9463784642143,
+          "cv_pct": 4.419731892321071,
+          "max_over_mean": 1.06305,
+          "min_over_mean": 0.9542
+        },
+        "200": {
+          "stdev_keys": 1568.5085909869924,
+          "cv_pct": 7.842542954934962,
+          "max_over_mean": 1.1433,
+          "min_over_mean": 0.91835
+        }
+      }
+    },
+    {
+      "remap": {
+        "3": {
+          "consistent_pct": 25.968,
+          "mod_n_pct": 75.06,
+          "ideal_ch_pct": 25.0,
+          "expected_mod_pct": 75.0
+        },
+        "5": {
+          "consistent_pct": 19.759,
+          "mod_n_pct": 83.339,
+          "ideal_ch_pct": 16.666666666666668,
+          "expected_mod_pct": 83.33333333333333
+        },
+        "10": {
+          "consistent_pct": 7.951,
+          "mod_n_pct": 91.001,
+          "ideal_ch_pct": 9.090909090909092,
+          "expected_mod_pct": 90.9090909090909
+        }
+      },
+      "balance": {
+        "1": {
+          "stdev_keys": 14733.50437608107,
+          "cv_pct": 73.66752188040535,
+          "max_over_mean": 2.36255,
+          "min_over_mean": 0.22645
+        },
+        "10": {
+          "stdev_keys": 8741.056915499406,
+          "cv_pct": 43.70528457749703,
+          "max_over_mean": 1.85545,
+          "min_over_mean": 0.62505
+        },
+        "100": {
+          "stdev_keys": 1556.8510526058683,
+          "cv_pct": 7.784255263029341,
+          "max_over_mean": 1.08175,
+          "min_over_mean": 0.8561
+        },
+        "200": {
+          "stdev_keys": 1788.75990563295,
+          "cv_pct": 8.94379952816475,
+          "max_over_mean": 1.138,
+          "min_over_mean": 0.8786
+        }
+      }
+    }
+  ],
+  "median": {
+    "remap": {
+      "3": {
+        "consistent_pct": 26.306,
+        "mod_n_pct": 74.925,
+        "ideal_ch_pct": 25.0,
+        "expected_mod_pct": 75.0
+      },
+      "5": {
+        "consistent_pct": 16.184,
+        "mod_n_pct": 83.4,
+        "ideal_ch_pct": 16.666666666666668,
+        "expected_mod_pct": 83.33333333333333
+      },
+      "10": {
+        "consistent_pct": 8.572,
+        "mod_n_pct": 90.874,
+        "ideal_ch_pct": 9.090909090909092,
+        "expected_mod_pct": 90.9090909090909
+      }
+    },
+    "balance": {
+      "1": {
+        "stdev_keys": 14733.50437608107,
+        "cv_pct": 73.66752188040535,
+        "max_over_mean": 2.36255,
+        "min_over_mean": 0.10305
+      },
+      "10": {
+        "stdev_keys": 5288.8606334445985,
+        "cv_pct": 26.444303167222994,
+        "max_over_mean": 1.4886,
+        "min_over_mean": 0.62505
+      },
+      "100": {
+        "stdev_keys": 1556.8510526058683,
+        "cv_pct": 7.784255263029341,
+        "max_over_mean": 1.08175,
+        "min_over_mean": 0.85655
+      },
+      "200": {
+        "stdev_keys": 1568.5085909869924,
+        "cv_pct": 7.842542954934962,
+        "max_over_mean": 1.138,
+        "min_over_mean": 0.91835
+      }
+    }
+  }
+}
