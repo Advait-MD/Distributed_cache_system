@@ -1,0 +1,10 @@
+crash run 0: detect=5.87s shift=5.8711323738098145s failed_attempts=1190 errors=0/13591 (0.000%) p99 before=23.2ms window p99=28.1ms max=42.7ms
+crash run 1: detect=5.53s shift=5.5214550495147705s failed_attempts=1102 errors=0/13522 (0.000%) p99 before=24.4ms window p99=28.2ms max=43.7ms
+crash run 2: detect=5.97s shift=5.975536584854126s failed_attempts=1184 errors=0/13275 (0.000%) p99 before=22.9ms window p99=28.0ms max=45.0ms
+hang run 0: detect=7.58s shift=8.181235790252686s failed_attempts=40 errors=0/7824 (0.000%) p99 before=25.9ms window p99=2018.8ms max=2019.7ms
+hang run 1: detect=8.25s shift=10.149829626083374s failed_attempts=50 errors=0/7251 (0.000%) p99 before=25.8ms window p99=2018.4ms max=2020.8ms
+hang run 2: detect=8.84s shift=10.200786113739014s failed_attempts=50 errors=0/7522 (0.000%) p99 before=26.1ms window p99=2019.5ms max=2021.0ms
+MEDIAN OF RUNS:
+  crash: detection_s=5.872981071472168, shift_s=5.8711323738098145, failed_attempts=1184, errors=0, error_pct=0.0, p99_before_ms=23.223623200447037, p50_window_ms=15.7296784996106, p99_window_ms=28.123112499542913, max_window_ms=43.74498600009247
+  hang: detection_s=8.250680923461914, shift_s=10.149829626083374, failed_attempts=50, errors=0, error_pct=0.0, p99_before_ms=25.87657650019537, p50_window_ms=8.24150849985017, p99_window_ms=2018.8017250000485, max_window_ms=2020.7698780004648
+[saved] bench/results/failover.json

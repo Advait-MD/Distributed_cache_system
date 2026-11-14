@@ -1,0 +1,166 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "runs": [
+    {
+      "summary_line": "376 passed, 1 skipped in 29.09s",
+      "counts": {
+        "passed": 376,
+        "skipped": 1
+      },
+      "total_cov_pct": 89.0738255033557,
+      "covered_lines": 3318,
+      "statements": 3725,
+      "per_package": {
+        "cache": {
+          "covered": 333,
+          "statements": 348,
+          "pct": 95.6896551724138
+        },
+        "cluster": {
+          "covered": 328,
+          "statements": 371,
+          "pct": 88.40970350404312
+        },
+        "database": {
+          "covered": 481,
+          "statements": 521,
+          "pct": 92.32245681381957
+        },
+        "import_dataset.py": {
+          "covered": 244,
+          "statements": 281,
+          "pct": 86.83274021352314
+        },
+        "main.py": {
+          "covered": 92,
+          "statements": 125,
+          "pct": 73.6
+        },
+        "router": {
+          "covered": 534,
+          "statements": 639,
+          "pct": 83.5680751173709
+        },
+        "services": {
+          "covered": 1306,
+          "statements": 1440,
+          "pct": 90.69444444444444
+        }
+      },
+      "wall_s": 30.027958912999566,
+      "term_tail": "cluster/node_lifecycle.py          80      4    95%\ncluster/node_manager.py           128      8    94%\ncluster/node_state.py              16      0   100%\ndatabase/__init__.py                4      0   100%\ndatabase/_connection_mixin.py      18      3    83%\ndatabase/_crud_mixin.py           124     21    83%\ndatabase/exceptions.py              2      0   100%\ndatabase/multi_repository.py      108      2    98%\ndatabase/registry.py              256     14    95%\ndatabase/repository.py              9      0   100%\nimport_dataset.py                 281     37    87%\nmain.py                           125     33    74%\nrouter/__init__.py                 13      5    62%\nrouter/_components.py              59      2    97%\nrouter/app.py                      11      2    82%\nrouter/config.py                   50      0   100%\nrouter/models.py                    5      0   100%\nrouter/router.py                   15      1    93%\nrouter/routes_bench.py              9      9     0%\nrouter/routes_cache.py             31      2    94%\nrouter/routes_cluster.py           55      6    89%\nrouter/routes_dashboard.py         52     11    79%\nrouter/routes_datasets.py          75     19    75%\nrouter/routes_db.py                23      5    78%\nrouter/routes_manage.py           148     24    84%\nrouter/routes_node.py              45      4    91%\nrouter/routes_search.py            37     14    62%\nrouter/routes_static.py            11      1    91%\nservices/__init__.py                6      0   100%\nservices/bench_counters.py         22     11    50%\nservices/cache_service.py          70      2    97%\nservices/circuit_breaker.py        82      3    96%\nservices/dataset_admin.py         134      4    97%\nservices/distributed_cache.py      74     15    80%\nservices/process_manager.py       110     24    78%\nservices/replication.py           243     30    88%\nservices/search.py                342     27    92%\nservices/seeding.py                89      5    94%\nservices/single_flight.py          45      1    98%\nservices/telemetry.py              41      0   100%\nservices/warmup.py                182     12    93%\n---------------------------------------------------\nTOTAL                            3725    407    89%\nCoverage JSON written to file /home/user/Distributed_cache_system/bench/.work/coverage.json\n376 passed, 1 skipped in 29.09s"
+    },
+    {
+      "summary_line": "376 passed, 1 skipped in 28.67s",
+      "counts": {
+        "passed": 376,
+        "skipped": 1
+      },
+      "total_cov_pct": 89.0738255033557,
+      "covered_lines": 3318,
+      "statements": 3725,
+      "per_package": {
+        "cache": {
+          "covered": 333,
+          "statements": 348,
+          "pct": 95.6896551724138
+        },
+        "cluster": {
+          "covered": 328,
+          "statements": 371,
+          "pct": 88.40970350404312
+        },
+        "database": {
+          "covered": 481,
+          "statements": 521,
+          "pct": 92.32245681381957
+        },
+        "import_dataset.py": {
+          "covered": 244,
+          "statements": 281,
+          "pct": 86.83274021352314
+        },
+        "main.py": {
+          "covered": 92,
+          "statements": 125,
+          "pct": 73.6
+        },
+        "router": {
+          "covered": 534,
+          "statements": 639,
+          "pct": 83.5680751173709
+        },
+        "services": {
+          "covered": 1306,
+          "statements": 1440,
+          "pct": 90.69444444444444
+        }
+      },
+      "wall_s": 29.345371340999918,
+      "term_tail": "cluster/node_lifecycle.py          80      4    95%\ncluster/node_manager.py           128      8    94%\ncluster/node_state.py              16      0   100%\ndatabase/__init__.py                4      0   100%\ndatabase/_connection_mixin.py      18      3    83%\ndatabase/_crud_mixin.py           124     21    83%\ndatabase/exceptions.py              2      0   100%\ndatabase/multi_repository.py      108      2    98%\ndatabase/registry.py              256     14    95%\ndatabase/repository.py              9      0   100%\nimport_dataset.py                 281     37    87%\nmain.py                           125     33    74%\nrouter/__init__.py                 13      5    62%\nrouter/_components.py              59      2    97%\nrouter/app.py                      11      2    82%\nrouter/config.py                   50      0   100%\nrouter/models.py                    5      0   100%\nrouter/router.py                   15      1    93%\nrouter/routes_bench.py              9      9     0%\nrouter/routes_cache.py             31      2    94%\nrouter/routes_cluster.py           55      6    89%\nrouter/routes_dashboard.py         52     11    79%\nrouter/routes_datasets.py          75     19    75%\nrouter/routes_db.py                23      5    78%\nrouter/routes_manage.py           148     24    84%\nrouter/routes_node.py              45      4    91%\nrouter/routes_search.py            37     14    62%\nrouter/routes_static.py            11      1    91%\nservices/__init__.py                6      0   100%\nservices/bench_counters.py         22     11    50%\nservices/cache_service.py          70      2    97%\nservices/circuit_breaker.py        82      3    96%\nservices/dataset_admin.py         134      4    97%\nservices/distributed_cache.py      74     15    80%\nservices/process_manager.py       110     24    78%\nservices/replication.py           243     30    88%\nservices/search.py                342     27    92%\nservices/seeding.py                89      5    94%\nservices/single_flight.py          45      1    98%\nservices/telemetry.py              41      0   100%\nservices/warmup.py                182     12    93%\n---------------------------------------------------\nTOTAL                            3725    407    89%\nCoverage JSON written to file /home/user/Distributed_cache_system/bench/.work/coverage.json\n376 passed, 1 skipped in 28.67s"
+    },
+    {
+      "summary_line": "376 passed, 1 skipped in 28.17s",
+      "counts": {
+        "passed": 376,
+        "skipped": 1
+      },
+      "total_cov_pct": 89.0738255033557,
+      "covered_lines": 3318,
+      "statements": 3725,
+      "per_package": {
+        "cache": {
+          "covered": 333,
+          "statements": 348,
+          "pct": 95.6896551724138
+        },
+        "cluster": {
+          "covered": 328,
+          "statements": 371,
+          "pct": 88.40970350404312
+        },
+        "database": {
+          "covered": 481,
+          "statements": 521,
+          "pct": 92.32245681381957
+        },
+        "import_dataset.py": {
+          "covered": 244,
+          "statements": 281,
+          "pct": 86.83274021352314
+        },
+        "main.py": {
+          "covered": 92,
+          "statements": 125,
+          "pct": 73.6
+        },
+        "router": {
+          "covered": 534,
+          "statements": 639,
+          "pct": 83.5680751173709
+        },
+        "services": {
+          "covered": 1306,
+          "statements": 1440,
+          "pct": 90.69444444444444
+        }
+      },
+      "wall_s": 28.67411813600029,
+      "term_tail": "cluster/node_lifecycle.py          80      4    95%\ncluster/node_manager.py           128      8    94%\ncluster/node_state.py              16      0   100%\ndatabase/__init__.py                4      0   100%\ndatabase/_connection_mixin.py      18      3    83%\ndatabase/_crud_mixin.py           124     21    83%\ndatabase/exceptions.py              2      0   100%\ndatabase/multi_repository.py      108      2    98%\ndatabase/registry.py              256     14    95%\ndatabase/repository.py              9      0   100%\nimport_dataset.py                 281     37    87%\nmain.py                           125     33    74%\nrouter/__init__.py                 13      5    62%\nrouter/_components.py              59      2    97%\nrouter/app.py                      11      2    82%\nrouter/config.py                   50      0   100%\nrouter/models.py                    5      0   100%\nrouter/router.py                   15      1    93%\nrouter/routes_bench.py              9      9     0%\nrouter/routes_cache.py             31      2    94%\nrouter/routes_cluster.py           55      6    89%\nrouter/routes_dashboard.py         52     11    79%\nrouter/routes_datasets.py          75     19    75%\nrouter/routes_db.py                23      5    78%\nrouter/routes_manage.py           148     24    84%\nrouter/routes_node.py              45      4    91%\nrouter/routes_search.py            37     14    62%\nrouter/routes_static.py            11      1    91%\nservices/__init__.py                6      0   100%\nservices/bench_counters.py         22     11    50%\nservices/cache_service.py          70      2    97%\nservices/circuit_breaker.py        82      3    96%\nservices/dataset_admin.py         134      4    97%\nservices/distributed_cache.py      74     15    80%\nservices/process_manager.py       110     24    78%\nservices/replication.py           243     30    88%\nservices/search.py                342     27    92%\nservices/seeding.py                89      5    94%\nservices/single_flight.py          45      1    98%\nservices/telemetry.py              41      0   100%\nservices/warmup.py                182     12    93%\n---------------------------------------------------\nTOTAL                            3725    407    89%\nCoverage JSON written to file /home/user/Distributed_cache_system/bench/.work/coverage.json\n376 passed, 1 skipped in 28.17s"
+    }
+  ],
+  "median_total_cov_pct": 89.0738255033557,
+  "median_wall_s": 29.345371340999918
+}

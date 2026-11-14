@@ -1,0 +1,22 @@
+  run 0 with    cold_key  : DB queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] p50=88.9ms p99=144.2ms
+  run 0 with    absent_key: DB queries per 100 = [4, 2, 2, 4, 6, 2, 3, 3, 1, 1] p50=69.7ms p99=109.6ms
+  run 0 without cold_key  : DB queries per 100 = [24, 99, 29, 34, 10, 21, 27, 19, 37, 49] p50=134.4ms p99=333.9ms
+  run 0 without absent_key: DB queries per 100 = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100] p50=158.3ms p99=236.1ms
+  run 0 HTTP router (single-flight on): SQL queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  run 1 with    cold_key  : DB queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] p50=75.7ms p99=126.7ms
+  run 1 with    absent_key: DB queries per 100 = [3, 4, 2, 2, 3, 6, 2, 4, 2, 4] p50=68.1ms p99=130.8ms
+  run 1 without cold_key  : DB queries per 100 = [69, 96, 19, 45, 15, 24, 7, 6, 11, 61] p50=138.6ms p99=346.7ms
+  run 1 without absent_key: DB queries per 100 = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100] p50=170.1ms p99=255.5ms
+  run 1 HTTP router (single-flight on): SQL queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  run 2 with    cold_key  : DB queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] p50=77.4ms p99=118.5ms
+  run 2 with    absent_key: DB queries per 100 = [2, 3, 2, 3, 1, 5, 3, 3, 1, 2] p50=72.9ms p99=100.0ms
+  run 2 without cold_key  : DB queries per 100 = [32, 18, 40, 26, 3, 43, 10, 36, 38, 14] p50=103.2ms p99=218.3ms
+  run 2 without absent_key: DB queries per 100 = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100] p50=131.0ms p99=304.4ms
+  run 2 HTTP router (single-flight on): SQL queries per 100 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+MEDIAN DB QUERIES PER 100 CONCURRENT REQUESTS:
+  with/cold_key          median=1.0  worst=1  p99 latency=126.67659705988626
+  with/absent_key        median=2.5  worst=6  p99 latency=109.60990955963098
+  without/cold_key       median=28.0  worst=99  p99 latency=333.86134963920995
+  without/absent_key     median=100.0  worst=100  p99 latency=255.49173926974615
+  http_router            median=1.0  worst=1  p99 latency=None
+[saved] bench/results/singleflight.json

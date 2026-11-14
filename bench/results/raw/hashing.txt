@@ -1,0 +1,30 @@
+run 0 remap 3->4: consistent=27.74% (ideal 25.00%)  mod-N=74.92%
+run 0 remap 5->6: consistent=14.18% (ideal 16.67%)  mod-N=83.52%
+run 0 remap 10->11: consistent=8.57% (ideal 9.09%)  mod-N=90.84%
+run 0 balance N=5 vnodes=  1: stdev=17666 keys cv=88.3% max/mean=2.41
+run 0 balance N=5 vnodes= 10: stdev=5289 keys cv=26.4% max/mean=1.49
+run 0 balance N=5 vnodes=100: stdev=1977 keys cv=9.9% max/mean=1.14
+run 0 balance N=5 vnodes=200: stdev=834 keys cv=4.2% max/mean=1.05
+run 1 remap 3->4: consistent=26.31% (ideal 25.00%)  mod-N=74.80%
+run 1 remap 5->6: consistent=16.18% (ideal 16.67%)  mod-N=83.40%
+run 1 remap 10->11: consistent=8.76% (ideal 9.09%)  mod-N=90.87%
+run 1 balance N=5 vnodes=  1: stdev=14087 keys cv=70.4% max/mean=1.91
+run 1 balance N=5 vnodes= 10: stdev=4716 keys cv=23.6% max/mean=1.32
+run 1 balance N=5 vnodes=100: stdev=884 keys cv=4.4% max/mean=1.06
+run 1 balance N=5 vnodes=200: stdev=1569 keys cv=7.8% max/mean=1.14
+run 2 remap 3->4: consistent=25.97% (ideal 25.00%)  mod-N=75.06%
+run 2 remap 5->6: consistent=19.76% (ideal 16.67%)  mod-N=83.34%
+run 2 remap 10->11: consistent=7.95% (ideal 9.09%)  mod-N=91.00%
+run 2 balance N=5 vnodes=  1: stdev=14734 keys cv=73.7% max/mean=2.36
+run 2 balance N=5 vnodes= 10: stdev=8741 keys cv=43.7% max/mean=1.86
+run 2 balance N=5 vnodes=100: stdev=1557 keys cv=7.8% max/mean=1.08
+run 2 balance N=5 vnodes=200: stdev=1789 keys cv=8.9% max/mean=1.14
+MEDIAN OF RUNS:
+  3->4 nodes: consistent 26.31% vs mod-N 74.92%
+  5->6 nodes: consistent 16.18% vs mod-N 83.40%
+  10->11 nodes: consistent 8.57% vs mod-N 90.87%
+  N=5 vnodes=1: stdev 14734 keys/node (cv 73.7%), max/mean 2.36
+  N=5 vnodes=10: stdev 5289 keys/node (cv 26.4%), max/mean 1.49
+  N=5 vnodes=100: stdev 1557 keys/node (cv 7.8%), max/mean 1.08
+  N=5 vnodes=200: stdev 1569 keys/node (cv 7.8%), max/mean 1.14
+[saved] bench/results/hashing.json

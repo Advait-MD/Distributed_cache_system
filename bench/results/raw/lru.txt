@@ -1,0 +1,13 @@
+run 0: get_hit=873,036/s  get_miss=3,059,663/s  put_update=943,915/s  put_insert_evict=697,593/s  dict_get_reference=15,005,163/s  dict_set_reference=7,539,794/s
+run 1: get_hit=857,086/s  get_miss=2,949,139/s  put_update=1,042,151/s  put_insert_evict=729,082/s  dict_get_reference=15,505,552/s  dict_set_reference=7,957,666/s
+run 2: get_hit=936,979/s  get_miss=3,121,340/s  put_update=1,235,637/s  put_insert_evict=737,812/s  dict_get_reference=14,845,968/s  dict_set_reference=7,853,379/s
+run 3: get_hit=923,515/s  get_miss=3,035,099/s  put_update=1,091,047/s  put_insert_evict=736,410/s  dict_get_reference=15,286,446/s  dict_set_reference=7,897,858/s
+run 4: get_hit=1,007,760/s  get_miss=3,048,404/s  put_update=1,188,661/s  put_insert_evict=749,426/s  dict_get_reference=15,713,068/s  dict_set_reference=8,322,942/s
+MEDIAN OF RUNS (ops/sec, single thread):
+  get_hit                   923,515
+  get_miss                3,048,404
+  put_update              1,091,047
+  put_insert_evict          736,410
+  dict_get_reference     15,286,446
+  dict_set_reference      7,897,858
+[saved] bench/results/lru.json

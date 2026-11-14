@@ -1,0 +1,9 @@
+run 0: miss: p50=8.001 p95=10.169 p99=11.657  hit: p50=2.388 p95=3.115 p99=3.821  direct_node_get: p50=0.797 p95=0.984 p99=1.411  raw_sqlite_get: p50=0.108 p95=0.150 p99=0.212
+run 1: miss: p50=7.995 p95=9.811 p99=10.854  hit: p50=2.381 p95=3.151 p99=3.724  direct_node_get: p50=0.810 p95=1.049 p99=1.374  raw_sqlite_get: p50=0.125 p95=0.226 p99=0.303
+run 2: miss: p50=8.751 p95=11.088 p99=12.669  hit: p50=2.375 p95=2.999 p99=3.523  direct_node_get: p50=0.811 p95=1.183 p99=1.439  raw_sqlite_get: p50=0.119 p95=0.216 p99=0.268
+MEDIAN OF RUNS:
+  miss             p50=8.001ms p95=10.169ms p99=11.657ms mean=8.302ms
+  hit              p50=2.381ms p95=3.115ms p99=3.724ms mean=2.473ms
+  direct_node_get  p50=0.810ms p95=1.049ms p99=1.411ms mean=0.849ms
+  raw_sqlite_get   p50=0.119ms p95=0.216ms p99=0.268ms mean=0.133ms
+[saved] bench/results/latency.json

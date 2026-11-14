@@ -1,0 +1,26 @@
+s=1.0,cap=1% run 0: never-touched-SQLite=39.92% client-cache=39.75% ideal=53.00% sql=17949 errors=0
+s=1.0,cap=1% run 1: never-touched-SQLite=40.44% client-cache=40.28% ideal=53.00% sql=17797 errors=0
+s=1.0,cap=1% run 2: never-touched-SQLite=40.32% client-cache=40.14% ideal=53.00% sql=17825 errors=0
+s=1.0,cap=5% run 0: never-touched-SQLite=60.67% client-cache=60.63% ideal=69.40% sql=11792 errors=0
+s=1.0,cap=5% run 1: never-touched-SQLite=59.81% client-cache=59.77% ideal=69.40% sql=12049 errors=0
+s=1.0,cap=5% run 2: never-touched-SQLite=60.76% client-cache=60.73% ideal=69.40% sql=11765 errors=0
+s=1.0,cap=10% run 0: never-touched-SQLite=69.28% client-cache=69.27% ideal=76.48% sql=9214 errors=0
+s=1.0,cap=10% run 1: never-touched-SQLite=70.29% client-cache=70.28% ideal=76.48% sql=8911 errors=0
+s=1.0,cap=10% run 2: never-touched-SQLite=69.85% client-cache=69.83% ideal=76.48% sql=9044 errors=0
+s=1.2,cap=1% run 0: never-touched-SQLite=66.77% client-cache=66.58% ideal=75.08% sql=9940 errors=0
+s=1.2,cap=1% run 1: never-touched-SQLite=67.56% client-cache=67.42% ideal=75.08% sql=9711 errors=0
+s=1.2,cap=1% run 2: never-touched-SQLite=67.34% client-cache=67.17% ideal=75.08% sql=9773 errors=0
+s=1.2,cap=5% run 0: never-touched-SQLite=82.71% client-cache=82.70% ideal=86.46% sql=5187 errors=0
+s=1.2,cap=5% run 1: never-touched-SQLite=82.21% client-cache=82.20% ideal=86.46% sql=5337 errors=0
+s=1.2,cap=5% run 2: never-touched-SQLite=82.17% client-cache=82.17% ideal=86.46% sql=5347 errors=0
+s=1.2,cap=10% run 0: never-touched-SQLite=87.62% client-cache=87.61% ideal=90.34% sql=3713 errors=0
+s=1.2,cap=10% run 1: never-touched-SQLite=87.54% client-cache=87.53% ideal=90.34% sql=3738 errors=0
+s=1.2,cap=10% run 2: never-touched-SQLite=87.80% client-cache=87.79% ideal=90.34% sql=3660 errors=0
+MEDIAN OF RUNS:
+  s=1.0,cap=1%     never touched SQLite 40.32% (client-side 40.14%, static-ideal 53.00%)
+  s=1.0,cap=5%     never touched SQLite 60.67% (client-side 60.63%, static-ideal 69.40%)
+  s=1.0,cap=10%    never touched SQLite 69.85% (client-side 69.83%, static-ideal 76.48%)
+  s=1.2,cap=1%     never touched SQLite 67.34% (client-side 67.17%, static-ideal 75.08%)
+  s=1.2,cap=5%     never touched SQLite 82.21% (client-side 82.20%, static-ideal 86.46%)
+  s=1.2,cap=10%    never touched SQLite 87.62% (client-side 87.61%, static-ideal 90.34%)
+[saved] bench/results/zipf.json

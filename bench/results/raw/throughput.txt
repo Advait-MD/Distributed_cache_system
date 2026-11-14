@@ -1,0 +1,46 @@
+run 0 loadgen ceiling: c=1:1,394  c=10:1,596  c=50:1,901  c=100:1,844
+run 0 nodes=1 c=  1:    425.5 rps p50=2.26ms p99=3.49ms errors=0 sources=['cache']
+run 0 nodes=1 c= 10:    755.2 rps p50=13.36ms p99=21.88ms errors=0 sources=['cache']
+run 0 nodes=1 c= 50:    786.0 rps p50=63.37ms p99=93.68ms errors=0 sources=['cache']
+run 0 nodes=1 c=100:    800.0 rps p50=122.31ms p99=173.99ms errors=0 sources=['cache']
+run 0 nodes=3 c=  1:    413.8 rps p50=2.32ms p99=3.79ms errors=0 sources=['cache']
+run 0 nodes=3 c= 10:    687.0 rps p50=14.56ms p99=25.02ms errors=0 sources=['cache']
+run 0 nodes=3 c= 50:    746.7 rps p50=67.13ms p99=101.85ms errors=0 sources=['cache']
+run 0 nodes=3 c=100:    759.4 rps p50=129.95ms p99=166.92ms errors=0 sources=['cache']
+run 0 nodes=5 c=  1:    416.3 rps p50=2.33ms p99=3.43ms errors=0 sources=['cache']
+run 0 nodes=5 c= 10:    715.3 rps p50=13.97ms p99=24.15ms errors=0 sources=['cache']
+run 0 nodes=5 c= 50:    774.3 rps p50=65.04ms p99=94.09ms errors=0 sources=['cache']
+run 0 nodes=5 c=100:    795.6 rps p50=124.11ms p99=167.37ms errors=0 sources=['cache']
+run 1 loadgen ceiling: c=1:1,363  c=10:1,679  c=50:1,847  c=100:1,779
+run 1 nodes=1 c=  1:    388.8 rps p50=2.51ms p99=3.89ms errors=0 sources=['cache']
+run 1 nodes=1 c= 10:    723.5 rps p50=13.75ms p99=23.56ms errors=0 sources=['cache']
+run 1 nodes=1 c= 50:    720.5 rps p50=69.47ms p99=108.45ms errors=0 sources=['cache']
+run 1 nodes=1 c=100:    744.7 rps p50=130.65ms p99=178.28ms errors=0 sources=['cache']
+run 1 nodes=3 c=  1:    403.9 rps p50=2.37ms p99=3.69ms errors=0 sources=['cache']
+run 1 nodes=3 c= 10:    760.8 rps p50=13.23ms p99=22.08ms errors=0 sources=['cache']
+run 1 nodes=3 c= 50:    807.0 rps p50=61.73ms p99=95.01ms errors=0 sources=['cache']
+run 1 nodes=3 c=100:    792.6 rps p50=124.00ms p99=170.96ms errors=0 sources=['cache']
+run 1 nodes=5 c=  1:    391.7 rps p50=2.46ms p99=4.10ms errors=0 sources=['cache']
+run 1 nodes=5 c= 10:    751.7 rps p50=13.41ms p99=22.13ms errors=0 sources=['cache']
+run 1 nodes=5 c= 50:    799.9 rps p50=62.46ms p99=97.05ms errors=0 sources=['cache']
+run 1 nodes=5 c=100:    795.2 rps p50=124.03ms p99=165.32ms errors=0 sources=['cache']
+run 2 loadgen ceiling: c=1:1,316  c=10:1,677  c=50:1,955  c=100:1,991
+run 2 nodes=1 c=  1:    417.6 rps p50=2.31ms p99=3.44ms errors=0 sources=['cache']
+run 2 nodes=1 c= 10:    766.5 rps p50=13.14ms p99=21.82ms errors=0 sources=['cache']
+run 2 nodes=1 c= 50:    824.6 rps p50=60.42ms p99=88.91ms errors=0 sources=['cache']
+run 2 nodes=1 c=100:    787.1 rps p50=125.39ms p99=163.84ms errors=0 sources=['cache']
+run 2 nodes=3 c=  1:    410.7 rps p50=2.38ms p99=3.81ms errors=0 sources=['cache']
+run 2 nodes=3 c= 10:    772.3 rps p50=12.93ms p99=21.84ms errors=0 sources=['cache']
+run 2 nodes=3 c= 50:    736.6 rps p50=67.70ms p99=102.72ms errors=0 sources=['cache']
+run 2 nodes=3 c=100:    800.7 rps p50=123.56ms p99=160.94ms errors=0 sources=['cache']
+run 2 nodes=5 c=  1:    425.4 rps p50=2.27ms p99=3.39ms errors=0 sources=['cache']
+run 2 nodes=5 c= 10:    719.5 rps p50=14.04ms p99=22.80ms errors=0 sources=['cache']
+run 2 nodes=5 c= 50:    808.3 rps p50=61.82ms p99=89.66ms errors=0 sources=['cache']
+run 2 nodes=5 c=100:    783.1 rps p50=126.19ms p99=167.48ms errors=0 sources=['cache']
+MEDIAN RPS (cache hits):
+nodes | c=1 | c=10 | c=50 | c=100
+    1 | 418 (p99 3.5ms) | 755 (p99 21.9ms) | 786 (p99 93.7ms) | 787 (p99 174.0ms)
+    3 | 411 (p99 3.8ms) | 761 (p99 22.1ms) | 747 (p99 101.9ms) | 793 (p99 166.9ms)
+    5 | 416 (p99 3.4ms) | 720 (p99 22.8ms) | 800 (p99 94.1ms) | 795 (p99 167.4ms)
+loadgen ceiling (null server): c=1: 1,363 | c=10: 1,677 | c=50: 1,901 | c=100: 1,844
+[saved] bench/results/throughput.json

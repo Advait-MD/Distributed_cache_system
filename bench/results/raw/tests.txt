@@ -1,0 +1,57 @@
+run 0: 376 passed, 1 skipped in 29.09s  coverage=89.07% (3318/3725 lines) wall=30.0s
+run 1: 376 passed, 1 skipped in 28.67s  coverage=89.07% (3318/3725 lines) wall=29.3s
+run 2: 376 passed, 1 skipped in 28.17s  coverage=89.07% (3318/3725 lines) wall=28.7s
+cluster/node_lifecycle.py          80      4    95%
+cluster/node_manager.py           128      8    94%
+cluster/node_state.py              16      0   100%
+database/__init__.py                4      0   100%
+database/_connection_mixin.py      18      3    83%
+database/_crud_mixin.py           124     21    83%
+database/exceptions.py              2      0   100%
+database/multi_repository.py      108      2    98%
+database/registry.py              256     14    95%
+database/repository.py              9      0   100%
+import_dataset.py                 281     37    87%
+main.py                           125     33    74%
+router/__init__.py                 13      5    62%
+router/_components.py              59      2    97%
+router/app.py                      11      2    82%
+router/config.py                   50      0   100%
+router/models.py                    5      0   100%
+router/router.py                   15      1    93%
+router/routes_bench.py              9      9     0%
+router/routes_cache.py             31      2    94%
+router/routes_cluster.py           55      6    89%
+router/routes_dashboard.py         52     11    79%
+router/routes_datasets.py          75     19    75%
+router/routes_db.py                23      5    78%
+router/routes_manage.py           148     24    84%
+router/routes_node.py              45      4    91%
+router/routes_search.py            37     14    62%
+router/routes_static.py            11      1    91%
+services/__init__.py                6      0   100%
+services/bench_counters.py         22     11    50%
+services/cache_service.py          70      2    97%
+services/circuit_breaker.py        82      3    96%
+services/dataset_admin.py         134      4    97%
+services/distributed_cache.py      74     15    80%
+services/process_manager.py       110     24    78%
+services/replication.py           243     30    88%
+services/search.py                342     27    92%
+services/seeding.py                89      5    94%
+services/single_flight.py          45      1    98%
+services/telemetry.py              41      0   100%
+services/warmup.py                182     12    93%
+---------------------------------------------------
+TOTAL                            3725    407    89%
+Coverage JSON written to file /home/user/Distributed_cache_system/bench/.work/coverage.json
+376 passed, 1 skipped in 28.17s
+PER PACKAGE (last run):
+  cache                  333/  348 = 95.7%
+  cluster                328/  371 = 88.4%
+  database               481/  521 = 92.3%
+  import_dataset.py      244/  281 = 86.8%
+  main.py                 92/  125 = 73.6%
+  router                 534/  639 = 83.6%
+  services              1306/ 1440 = 90.7%
+[saved] bench/results/tests.json
