@@ -1,0 +1,380 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "args": {
+    "runs": 3,
+    "trials": 10
+  },
+  "raw": [
+    {
+      "with/cold_key": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0,
+        "max_db_queries": 1,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 88.85092799982885,
+          "p95_ms": 128.99918570064978,
+          "p99_ms": 144.21558506981455,
+          "mean_ms": 83.00814355802414,
+          "max_ms": 150.06789099970774
+        }
+      },
+      "with/absent_key": {
+        "db_queries_per_burst": [
+          4,
+          2,
+          2,
+          4,
+          6,
+          2,
+          3,
+          3,
+          1,
+          1
+        ],
+        "median_db_queries": 2.5,
+        "max_db_queries": 6,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 69.70638450002298,
+          "p95_ms": 104.01101380039107,
+          "p99_ms": 109.60990955963098,
+          "mean_ms": 67.99881766799444,
+          "max_ms": 113.95501500010141
+        }
+      },
+      "without/cold_key": {
+        "db_queries_per_burst": [
+          24,
+          99,
+          29,
+          34,
+          10,
+          21,
+          27,
+          19,
+          37,
+          49
+        ],
+        "median_db_queries": 28.0,
+        "max_db_queries": 99,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 134.35342200045852,
+          "p95_ms": 301.5836046499316,
+          "p99_ms": 333.86134963920995,
+          "mean_ms": 133.910873717994,
+          "max_ms": 343.8410959997782
+        }
+      },
+      "without/absent_key": {
+        "db_queries_per_burst": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "median_db_queries": 100.0,
+        "max_db_queries": 100,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 158.32490399952803,
+          "p95_ms": 220.02940740035226,
+          "p99_ms": 236.1313012503069,
+          "mean_ms": 152.32391626402477,
+          "max_ms": 264.70352900014404
+        }
+      },
+      "http_router": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0
+      }
+    },
+    {
+      "with/cold_key": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0,
+        "max_db_queries": 1,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 75.72317750009461,
+          "p95_ms": 112.6244477502496,
+          "p99_ms": 126.67659705988626,
+          "mean_ms": 69.35359503499421,
+          "max_ms": 131.97467800000595
+        }
+      },
+      "with/absent_key": {
+        "db_queries_per_burst": [
+          3,
+          4,
+          2,
+          2,
+          3,
+          6,
+          2,
+          4,
+          2,
+          4
+        ],
+        "median_db_queries": 3.0,
+        "max_db_queries": 6,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 68.11474799997086,
+          "p95_ms": 114.71149704962045,
+          "p99_ms": 130.841003840369,
+          "mean_ms": 64.79744983199271,
+          "max_ms": 135.4621650007175
+        }
+      },
+      "without/cold_key": {
+        "db_queries_per_burst": [
+          69,
+          96,
+          19,
+          45,
+          15,
+          24,
+          7,
+          6,
+          11,
+          61
+        ],
+        "median_db_queries": 21.5,
+        "max_db_queries": 96,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 138.58897499994782,
+          "p95_ms": 330.2902148000612,
+          "p99_ms": 346.69950157966014,
+          "mean_ms": 157.77397998401557,
+          "max_ms": 362.9488730002777
+        }
+      },
+      "without/absent_key": {
+        "db_queries_per_burst": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "median_db_queries": 100.0,
+        "max_db_queries": 100,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 170.11655999976938,
+          "p95_ms": 236.62124215011318,
+          "p99_ms": 255.49173926974615,
+          "mean_ms": 164.65203469999688,
+          "max_ms": 279.0991780002514
+        }
+      },
+      "http_router": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0
+      }
+    },
+    {
+      "with/cold_key": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0,
+        "max_db_queries": 1,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 77.40997449991482,
+          "p95_ms": 103.30319740005505,
+          "p99_ms": 118.4791675303677,
+          "mean_ms": 68.3134338419941,
+          "max_ms": 121.95087100008095
+        }
+      },
+      "with/absent_key": {
+        "db_queries_per_burst": [
+          2,
+          3,
+          2,
+          3,
+          1,
+          5,
+          3,
+          3,
+          1,
+          2
+        ],
+        "median_db_queries": 2.5,
+        "max_db_queries": 5,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 72.9018465003719,
+          "p95_ms": 97.76073084976815,
+          "p99_ms": 99.98132583996266,
+          "mean_ms": 66.67589776899969,
+          "max_ms": 105.16256200025964
+        }
+      },
+      "without/cold_key": {
+        "db_queries_per_burst": [
+          32,
+          18,
+          40,
+          26,
+          3,
+          43,
+          10,
+          36,
+          38,
+          14
+        ],
+        "median_db_queries": 29.0,
+        "max_db_queries": 43,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 103.2218254995314,
+          "p95_ms": 193.16522729968707,
+          "p99_ms": 218.29401275996133,
+          "mean_ms": 98.34375429897499,
+          "max_ms": 224.7602959996584
+        }
+      },
+      "without/absent_key": {
+        "db_queries_per_burst": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "median_db_queries": 100.0,
+        "max_db_queries": 100,
+        "latency": {
+          "n": 1000,
+          "p50_ms": 130.98001949992977,
+          "p95_ms": 261.1565025492382,
+          "p99_ms": 304.3530400497548,
+          "mean_ms": 137.21598422600073,
+          "max_ms": 324.13827299933473
+        }
+      },
+      "http_router": {
+        "db_queries_per_burst": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "median_db_queries": 1.0
+      }
+    }
+  ],
+  "median_db_queries": {
+    "with/cold_key": 1.0,
+    "with/absent_key": 2.5,
+    "without/cold_key": 28.0,
+    "without/absent_key": 100.0,
+    "http_router": 1.0
+  },
+  "worst_db_queries": {
+    "with/cold_key": 1,
+    "with/absent_key": 6,
+    "without/cold_key": 99,
+    "without/absent_key": 100,
+    "http_router": 1
+  },
+  "median_p99_ms": {
+    "with/cold_key": 126.67659705988626,
+    "with/absent_key": 109.60990955963098,
+    "without/cold_key": 333.86134963920995,
+    "without/absent_key": 255.49173926974615
+  }
+}
