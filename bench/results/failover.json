@@ -1,0 +1,223 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "args": {
+    "runs": 3,
+    "mode": "both"
+  },
+  "raw": {
+    "crash": [
+      {
+        "mode": "crash",
+        "detection_s": 5.872981071472168,
+        "polled_unhealthy_s": 1.8791038990020752,
+        "polled_failed_s": 5.889785528182983,
+        "shift_s": 5.8711323738098145,
+        "failed_attempts": 1190,
+        "requests_after_kill": 13591,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5884,
+          "p50_ms": 13.593376999779139,
+          "p95_ms": 19.690323450095093,
+          "p99_ms": 23.223623200447037,
+          "mean_ms": 13.57275589039032,
+          "max_ms": 34.04814500026987
+        },
+        "latency_window": {
+          "n": 3751,
+          "p50_ms": 15.365706999546092,
+          "p95_ms": 23.287153499950364,
+          "p99_ms": 28.123112499542913,
+          "mean_ms": 15.654444833113331,
+          "max_ms": 42.66641000049276
+        },
+        "requests_in_window": 3751
+      },
+      {
+        "mode": "crash",
+        "detection_s": 5.5347442626953125,
+        "polled_unhealthy_s": 1.513174057006836,
+        "polled_failed_s": 5.543993234634399,
+        "shift_s": 5.5214550495147705,
+        "failed_attempts": 1102,
+        "requests_after_kill": 13522,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5560,
+          "p50_ms": 14.335727999878145,
+          "p95_ms": 20.970456450322672,
+          "p99_ms": 24.42573302032541,
+          "mean_ms": 14.365349625177586,
+          "max_ms": 35.435523000160174
+        },
+        "latency_window": {
+          "n": 3443,
+          "p50_ms": 15.838752000490786,
+          "p95_ms": 23.440905200095575,
+          "p99_ms": 28.167954319924313,
+          "mean_ms": 16.05539711124067,
+          "max_ms": 43.74498600009247
+        },
+        "requests_in_window": 3443
+      },
+      {
+        "mode": "crash",
+        "detection_s": 5.972053527832031,
+        "polled_unhealthy_s": 1.9853777885437012,
+        "polled_failed_s": 6.032990455627441,
+        "shift_s": 5.975536584854126,
+        "failed_attempts": 1184,
+        "requests_after_kill": 13275,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5891,
+          "p50_ms": 13.659357000506134,
+          "p95_ms": 19.600756500040006,
+          "p99_ms": 22.904481699333704,
+          "mean_ms": 13.559473053128675,
+          "max_ms": 40.54299000017636
+        },
+        "latency_window": {
+          "n": 3732,
+          "p50_ms": 15.7296784996106,
+          "p95_ms": 23.31553580029321,
+          "p99_ms": 28.038373409708587,
+          "mean_ms": 16.00072406001437,
+          "max_ms": 44.97715599973162
+        },
+        "requests_in_window": 3732
+      }
+    ],
+    "hang": [
+      {
+        "mode": "hang",
+        "detection_s": 7.581286191940308,
+        "polled_unhealthy_s": 1.5961949825286865,
+        "polled_failed_s": 7.607881307601929,
+        "shift_s": 8.181235790252686,
+        "failed_attempts": 40,
+        "requests_after_kill": 7824,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5451,
+          "p50_ms": 14.586045000214654,
+          "p95_ms": 21.712839999963762,
+          "p99_ms": 25.87657650019537,
+          "mean_ms": 14.628129815085122,
+          "max_ms": 38.69473000031576
+        },
+        "latency_window": {
+          "n": 141,
+          "p50_ms": 9.533362000183843,
+          "p95_ms": 2015.2343600002496,
+          "p99_ms": 2018.8017250000485,
+          "mean_ms": 576.3124836596086,
+          "max_ms": 2019.7479259995816
+        },
+        "requests_in_window": 141
+      },
+      {
+        "mode": "hang",
+        "detection_s": 8.250680923461914,
+        "polled_unhealthy_s": 2.277559518814087,
+        "polled_failed_s": 8.300543546676636,
+        "shift_s": 10.149829626083374,
+        "failed_attempts": 50,
+        "requests_after_kill": 7251,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5270,
+          "p50_ms": 15.093736499693478,
+          "p95_ms": 22.129090250382433,
+          "p99_ms": 25.767132760192947,
+          "mean_ms": 15.517854554843932,
+          "max_ms": 2015.219560999867
+        },
+        "latency_window": {
+          "n": 145,
+          "p50_ms": 7.029915000202891,
+          "p95_ms": 2012.8108615997917,
+          "p99_ms": 2018.4100669601685,
+          "mean_ms": 683.1415631379372,
+          "max_ms": 2020.7698780004648
+        },
+        "requests_in_window": 145
+      },
+      {
+        "mode": "hang",
+        "detection_s": 8.840264797210693,
+        "polled_unhealthy_s": 2.846550464630127,
+        "polled_failed_s": 8.869637966156006,
+        "shift_s": 10.200786113739014,
+        "failed_attempts": 50,
+        "requests_after_kill": 7522,
+        "errors": 0,
+        "error_pct": 0.0,
+        "error_kinds": [],
+        "latency_before": {
+          "n": 5249,
+          "p50_ms": 15.146536000429478,
+          "p95_ms": 22.612526400371276,
+          "p99_ms": 26.105698159590247,
+          "mean_ms": 15.210681482373994,
+          "max_ms": 34.77146799923503
+        },
+        "latency_window": {
+          "n": 160,
+          "p50_ms": 8.24150849985017,
+          "p95_ms": 2018.0969086002733,
+          "p99_ms": 2019.4550122001056,
+          "mean_ms": 634.0256241187262,
+          "max_ms": 2020.9642390000226
+        },
+        "requests_in_window": 160
+      }
+    ]
+  },
+  "median": {
+    "crash": {
+      "detection_s": 5.872981071472168,
+      "shift_s": 5.8711323738098145,
+      "failed_attempts": 1184,
+      "errors": 0,
+      "error_pct": 0.0,
+      "p99_before_ms": 23.223623200447037,
+      "p50_window_ms": 15.7296784996106,
+      "p99_window_ms": 28.123112499542913,
+      "max_window_ms": 43.74498600009247
+    },
+    "hang": {
+      "detection_s": 8.250680923461914,
+      "shift_s": 10.149829626083374,
+      "failed_attempts": 50,
+      "errors": 0,
+      "error_pct": 0.0,
+      "p99_before_ms": 25.87657650019537,
+      "p50_window_ms": 8.24150849985017,
+      "p99_window_ms": 2018.8017250000485,
+      "max_window_ms": 2020.7698780004648
+    }
+  }
+}
