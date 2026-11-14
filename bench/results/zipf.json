@@ -1,0 +1,289 @@
+{
+  "specs": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "logical_cpus": 4,
+    "ram_gib": 15.7,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.44-fc-v470",
+    "python": "3.13.18",
+    "fastapi": "0.162.7",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "sqlite": "3.53.1",
+    "cpu_pinning": "servers on CPUs 0-2, load generator on CPU 3"
+  },
+  "args": {
+    "runs": 3,
+    "keys": 10000,
+    "warm": 20000,
+    "measure": 30000
+  },
+  "raw": {
+    "s=1.0,cap=1%": [
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 39.917654147419164,
+        "sql_queries": 17949,
+        "served_reads": 29874,
+        "client_cache_pct": 39.75,
+        "errors": 0,
+        "ideal_static_pct": 52.99945153632356,
+        "rps": 240.3254706950921
+      },
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 40.44240680008031,
+        "sql_queries": 17797,
+        "served_reads": 29882,
+        "client_cache_pct": 40.28333333333333,
+        "errors": 0,
+        "ideal_static_pct": 52.99945153632356,
+        "rps": 234.5428644316296
+      },
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 40.320744609615645,
+        "sql_queries": 17825,
+        "served_reads": 29868,
+        "client_cache_pct": 40.14333333333333,
+        "errors": 0,
+        "ideal_static_pct": 52.99945153632356,
+        "rps": 230.1465081671022
+      }
+    ],
+    "s=1.0,cap=5%": [
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 60.66711140760507,
+        "sql_queries": 11792,
+        "served_reads": 29980,
+        "client_cache_pct": 60.626666666666665,
+        "errors": 0,
+        "ideal_static_pct": 69.40229720091814,
+        "rps": 314.31489245029906
+      },
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 59.81121376872019,
+        "sql_queries": 12049,
+        "served_reads": 29981,
+        "client_cache_pct": 59.77333333333333,
+        "errors": 0,
+        "ideal_static_pct": 69.40229720091814,
+        "rps": 299.5909563757697
+      },
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 60.76240661686233,
+        "sql_queries": 11765,
+        "served_reads": 29984,
+        "client_cache_pct": 60.73,
+        "errors": 0,
+        "ideal_static_pct": 69.40229720091814,
+        "rps": 301.99353978910693
+      }
+    ],
+    "s=1.0,cap=10%": [
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 69.28154692448742,
+        "sql_queries": 9214,
+        "served_reads": 29995,
+        "client_cache_pct": 69.27,
+        "errors": 0,
+        "ideal_static_pct": 76.4790780603953,
+        "rps": 337.400126749831
+      },
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 70.29270569409255,
+        "sql_queries": 8911,
+        "served_reads": 29996,
+        "client_cache_pct": 70.28333333333333,
+        "errors": 0,
+        "ideal_static_pct": 76.4790780603953,
+        "rps": 338.37589592312577
+      },
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 69.84629746940954,
+        "sql_queries": 9044,
+        "served_reads": 29993,
+        "client_cache_pct": 69.83,
+        "errors": 0,
+        "ideal_static_pct": 76.4790780603953,
+        "rps": 333.7924555876904
+      }
+    ],
+    "s=1.2,cap=1%": [
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 66.77252214608056,
+        "sql_queries": 9940,
+        "served_reads": 29915,
+        "client_cache_pct": 66.58333333333333,
+        "errors": 0,
+        "ideal_static_pct": 75.07658275046019,
+        "rps": 326.53853995734573
+      },
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 67.56187994789057,
+        "sql_queries": 9711,
+        "served_reads": 29937,
+        "client_cache_pct": 67.42,
+        "errors": 0,
+        "ideal_static_pct": 75.07658275046019,
+        "rps": 332.03629403294923
+      },
+      {
+        "per_node_capacity": 67,
+        "unique_capacity": 100,
+        "never_touched_sqlite_pct": 67.33950472880393,
+        "sql_queries": 9773,
+        "served_reads": 29923,
+        "client_cache_pct": 67.16666666666667,
+        "errors": 0,
+        "ideal_static_pct": 75.07658275046019,
+        "rps": 342.7317967243747
+      }
+    ],
+    "s=1.2,cap=5%": [
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 82.7076943592479,
+        "sql_queries": 5187,
+        "served_reads": 29996,
+        "client_cache_pct": 82.69666666666667,
+        "errors": 0,
+        "ideal_static_pct": 86.45648389233752,
+        "rps": 459.41501837354457
+      },
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 82.20762768369116,
+        "sql_queries": 5337,
+        "served_reads": 29996,
+        "client_cache_pct": 82.19666666666667,
+        "errors": 0,
+        "ideal_static_pct": 86.45648389233752,
+        "rps": 451.07374589993486
+      },
+      {
+        "per_node_capacity": 334,
+        "unique_capacity": 500,
+        "never_touched_sqlite_pct": 82.17488415508217,
+        "sql_queries": 5347,
+        "served_reads": 29997,
+        "client_cache_pct": 82.16666666666667,
+        "errors": 0,
+        "ideal_static_pct": 86.45648389233752,
+        "rps": 454.2981757738456
+      }
+    ],
+    "s=1.2,cap=10%": [
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 87.62209554288762,
+        "sql_queries": 3713,
+        "served_reads": 29997,
+        "client_cache_pct": 87.61333333333333,
+        "errors": 0,
+        "ideal_static_pct": 90.34454900897963,
+        "rps": 517.7527334144584
+      },
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 87.53875387538754,
+        "sql_queries": 3738,
+        "served_reads": 29997,
+        "client_cache_pct": 87.53,
+        "errors": 0,
+        "ideal_static_pct": 90.34454900897963,
+        "rps": 509.4383807231918
+      },
+      {
+        "per_node_capacity": 667,
+        "unique_capacity": 1000,
+        "never_touched_sqlite_pct": 87.7987798779878,
+        "sql_queries": 3660,
+        "served_reads": 29997,
+        "client_cache_pct": 87.79,
+        "errors": 0,
+        "ideal_static_pct": 90.34454900897963,
+        "rps": 512.7625274250945
+      }
+    ]
+  },
+  "median": {
+    "s=1.0,cap=1%": {
+      "never_touched_sqlite_pct": 40.320744609615645,
+      "client_cache_pct": 40.14333333333333,
+      "ideal_static_pct": 52.99945153632356,
+      "sql_queries": 17825,
+      "errors": 0,
+      "per_node_capacity": 67,
+      "unique_capacity": 100
+    },
+    "s=1.0,cap=5%": {
+      "never_touched_sqlite_pct": 60.66711140760507,
+      "client_cache_pct": 60.626666666666665,
+      "ideal_static_pct": 69.40229720091814,
+      "sql_queries": 11792,
+      "errors": 0,
+      "per_node_capacity": 334,
+      "unique_capacity": 500
+    },
+    "s=1.0,cap=10%": {
+      "never_touched_sqlite_pct": 69.84629746940954,
+      "client_cache_pct": 69.83,
+      "ideal_static_pct": 76.4790780603953,
+      "sql_queries": 9044,
+      "errors": 0,
+      "per_node_capacity": 667,
+      "unique_capacity": 1000
+    },
+    "s=1.2,cap=1%": {
+      "never_touched_sqlite_pct": 67.33950472880393,
+      "client_cache_pct": 67.16666666666667,
+      "ideal_static_pct": 75.07658275046019,
+      "sql_queries": 9773,
+      "errors": 0,
+      "per_node_capacity": 67,
+      "unique_capacity": 100
+    },
+    "s=1.2,cap=5%": {
+      "never_touched_sqlite_pct": 82.20762768369116,
+      "client_cache_pct": 82.19666666666667,
+      "ideal_static_pct": 86.45648389233752,
+      "sql_queries": 5337,
+      "errors": 0,
+      "per_node_capacity": 334,
+      "unique_capacity": 500
+    },
+    "s=1.2,cap=10%": {
+      "never_touched_sqlite_pct": 87.62209554288762,
+      "client_cache_pct": 87.61333333333333,
+      "ideal_static_pct": 90.34454900897963,
+      "sql_queries": 3713,
+      "errors": 0,
+      "per_node_capacity": 667,
+      "unique_capacity": 1000
+    }
+  }
+}
